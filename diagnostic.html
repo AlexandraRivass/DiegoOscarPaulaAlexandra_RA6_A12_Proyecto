@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PTD Escola — Diagnòstic</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="index.html">🏠 Inici</a></li>
+    <li><a href="diagnostic.html">🔍 Diagnòstic</a></li>
+    <li><a href="solucions.html">💡 Solucions</a></li>
+    <li><a href="motivacio.html">❤️ Motivació & Pla</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="page-kicker">🔍 Fase 1 · Diagnòstic</div>
+  <span class="hero-emoji">🩺</span>
+  <h1>El que hem trobat<br><em>(i no ens ha sorprès gaire)</em></h1>
+  <p>Hem analitzat com funcionen les quatre àrees ara mateix. El resultat? Molt de paper, molta feina manual i molt de temps perdut. Aquí ho expliquem amb honestedat.</p>
+</div>
+
+<!-- DIAGNOSIS SECTION -->
+<div class="warm-bg">
+  <div class="section">
+    <div class="label">📋 Problemes detectats per àrea</div>
+    <h2 class="title">Quatre àrees, molts problemes en comú</h2>
+    <p class="intro">Cada àrea analitzada presenta problemes similars: dependència del paper, processos manuals i falta de traçabilitat. Trieu una pestanya per veure el detall.</p>
+
+    <div class="diag-tabs">
+      <button class="dtab it active" onclick="showDiag('d-it',this)">🖥️ Gestió IT</button>
+      <button class="dtab fam" onclick="showDiag('d-fam',this)">👨‍👩‍👧 Famílies</button>
+      <button class="dtab doc" onclick="showDiag('d-doc',this)">📂 Documental</button>
+      <button class="dtab rrhh" onclick="showDiag('d-rrhh',this)">👥 RRHH</button>
+    </div>
+
+    <!-- IT -->
+    <div class="diag-panel active" id="d-it">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon">📋</div>
+          <div class="p-body">
+            <h4>Seguiment manual dels equips</h4>
+            <p>El personal tècnic ha de passar físicament per cada equip per comprovar el seu estat. Problemes petits es converteixen en grans avaries perquè ningú els detecta a temps.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">📝</div>
+          <div class="p-body">
+            <h4>Sol·licituds de manteniment en paper</h4>
+            <p>Quan un projector falla, cal omplir un paper i esperar. Ningú sap on és la sol·licitud ni quan es resoldrà. Mentrestant, la classe pateix.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">📊</div>
+          <div class="p-body">
+            <h4>Incidències registrades en un full de càlcul</h4>
+            <p>Un Excel manual no és un sistema real. Sense alertes automàtiques, sense prioritats i sense que ningú el consulti de manera consistent.</p>
+            <span class="severity sev-med">🔶 Gravetat mitjana</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">🗄️</div>
+          <div class="p-body">
+            <h4>Inventari informàtic desactualitzat</h4>
+            <p>Ningú sap exactament quants equips hi ha ni quin estat tenen. Planificar compres és un acte de fe, no de gestió professional.</p>
+            <span class="severity sev-med">🔶 Gravetat mitjana</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAMÍLIES -->
+    <div class="diag-panel" id="d-fam">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon">✉️</div>
+          <div class="p-body">
+            <h4>Comunicats en paper via alumnes</h4>
+            <p>El comunicat surt de secretaria, passa per les mans de l'alumne i… a vegades arriba a casa, a vegades no. Les famílies no saben el que passa a l'escola fins que és massa tard.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">✍️</div>
+          <div class="p-body">
+            <h4>Comprovant signat pels pares</h4>
+            <p>Demanar una firma en paper i retornar-la via l'alumne és lent i poc fiable. Molta feina administrativa per comprovar qui ha respost i qui no.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">🔇</div>
+          <div class="p-body">
+            <h4>Comunicació d'una sola direcció</h4>
+            <p>Les famílies no tenen cap canal digital fàcil per contactar amb l'escola. Han de trucar o venir en persona per qualsevol consulta.</p>
+            <span class="severity sev-med">🔶 Gravetat mitjana</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOCUMENTAL -->
+    <div class="diag-panel" id="d-doc">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon">🗃️</div>
+          <div class="p-body">
+            <h4>Arxius físics per a tot</h4>
+            <p>Expedients en paper, dins d'armaris. Si es perd un document o hi ha un incendi, no hi ha manera de recuperar-lo. El risc és real i immediat.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">🐌</div>
+          <div class="p-body">
+            <h4>Sol·licituds de certificats gestionades manualment</h4>
+            <p>Demanar un certificat implica anar a secretaria, esperar i tornar a buscar-lo. Un procés que pot durar dies per una tasca que hauria de ser instantània.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">🧩</div>
+          <div class="p-body">
+            <h4>Sense sistema documental centralitzat</h4>
+            <p>Cada departament guarda documents de manera diferent. Sense versions actualitzades, sense col·laboració possible i amb duplicats per tot arreu.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RRHH -->
+    <div class="diag-panel" id="d-rrhh">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon">💻</div>
+          <div class="p-body">
+            <h4>Tot en un sol ordinador</h4>
+            <p>El programari de nòmines viu a l'ordinador del secretari. Si es fa malbé aquell ordinador, no hi ha accés a res. Un risc enorme que es pot evitar fàcilment.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">🚦</div>
+          <div class="p-body">
+            <h4>Tot passa pel secretari</h4>
+            <p>Qualsevol consulta de dades de personal depèn d'una sola persona. Quan el secretari no hi és, tot s'atura. Això no és sostenible a llarg termini.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon">💾</div>
+          <div class="p-body">
+            <h4>Cap còpia de seguretat automàtica</h4>
+            <p>Les dades dels treballadors no es fan còpies automàticament. Un sol incident podria fer desaparèixer anys d'informació de RRHH del centre.</p>
+            <span class="severity sev-high">⚠️ Gravetat alta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVIGATION BUTTONS -->
+<div class="next-page">
+  <div class="nav-buttons">
+    <a href="index.html" class="prev-btn"><span>←</span> Tornar a l'Inici</a>
+    <a href="solucions.html" class="next-btn">💡 Veure les Solucions <span>→</span></a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">La nostra escola, en digital 🏫</div>
+  <p>CFGS ASIX · 1665 Digitalització · Activitat 12<br>Jesuïtes Bellvitge – Joan XXIII · Curs 2024–2025</p>
+  <div class="footer-areas">
+    <span class="f-chip">🖥️ Gestió IT</span>
+    <span class="f-chip">👨‍👩‍👧 Famílies</span>
+    <span class="f-chip">📂 Documental</span>
+    <span class="f-chip">👥 RRHH</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
