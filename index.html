@@ -1,105 +1,156 @@
-<!DOCTYPE html>
-<html lang="ca">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oslex</title>
-<!-- Logo de la pagina inicial -->
-<link rel="icon" href="./img/logo.png">
-    
-<link rel="stylesheet" href="css/styles.css">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oslex</title>
 
-<!--Enlace Font Awesome-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Icono de la página -->
+    <link rel="icon" href="./img/logo.png" />
 
-</head>
-<body>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-<!-- HERO -->
-<!-- HERO -->
-<header class="portada">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!----------HERO ---------->
+    <header class="portada">
+      <h1>La escuela<br />merece un futuro <em>digital</em></h1>
 
+      <div class="menu_opciones">
+        <a href="./paginas/diagnostic.html" class="opcion">
+          <i class="fas fa-desktop"></i> Gestión IT
+        </a>
+        <a href="./paginas/diagnostic.html" class="opcion">
+          <i class="fas fa-users"></i> Familias
+        </a>
+        <a href="./paginas/diagnostic.html" class="opcion">
+          <i class="fas fa-folder"></i> Documental
+        </a>
 
-  <h1>La nostra escola<br>mereix un futur <em>digital</em></h1>
+      </div>
+    </header>
 
-  <p class="descripcion">
-      Ejemplo - tonto
-  </p>
+    <!----------- NAVEGACIÓN ------- -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-house"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="./paginas/diagnostic.html"
+            ><i class="fas fa-magnifying-glass"></i> Diagnóstico</a
+          >
+        </li>
+        <li>
+          <a href="./paginas/solucions.html"
+            ><i class="fas fa-lightbulb"></i> Soluciones</a
+          >
+        </li>
+        <li>
+          <a href="./paginas/motivacio.html"
+            ><i class="fas fa-heart"></i> Motivación & Plan</a
+          >
+        </li>
+      </ul>
+    </nav>
 
+    <!-- ================= QUIÉNES SOMOS ================= -->
+    <section class="seccion" id="qui-som">
+      <div class="etiqueta">
+        <i class="fas fa-hand"></i> Quiénes somos y por qué estamos aquí
+      </div>
 
-  <div class="menu_opciones">
-    <a href="diagnostic.html" class="opcion">🖥️ Gestió IT</a>
-    <a href="diagnostic.html" class="opcion">👨‍👩‍👧 Famílies</a>
-    <a href="diagnostic.html" class="opcion">📂 Documental</a>
-    <a href="diagnostic.html" class="opcion">👥 RRHH</a>
-  </div>
+      <h2 class="titulo">
+        ¡Hola! Somos vuestro equipo de consultoría digital.
+      </h2>
 
+      <p class="intro">
+        El consejo de dirección nos ha contratado para ayudar a la escuela a dar
+        el salto digital. No hemos venido a complicar la vida a nadie — todo lo
+        contrario. Queremos que las tareas del día a día sean más fáciles,
+        rápidas y sin tanto papeleo.
+      </p>
 
-</header>
+      <div class="intro_box fade-in">
+        "La transformación digital no es una opción, es una necesidad.<br />
+        <strong
+          >Y la buena noticia es que la escuela ya tiene las personas adecuadas
+          para hacerlo posible.</strong
+        >"
+      </div>
 
-<!-- NAV -->
-<nav>
-  <ul>
-    <li><a href="index.html">🏠 Inici</a></li>
-    <li><a href="diagnostic.html">🔍 Diagnòstic</a></li>
-    <li><a href="solucions.html">💡 Solucions</a></li>
-    <li><a href="motivacio.html">❤️ Motivació & Pla</a></li>
-  </ul>
-</nav>
+      <div class="areas">
+        <!-- Área 1: Gestión IT -->
+        <a href="./paginas/diagnostic.html" class="area_bloque it fade-in">
+          <span class="icono"><i class="fas fa-desktop"></i></span>
+          <h3>Gestión Informática</h3>
+          <p>
+            El personal técnico debe realizar un seguimiento manual de los
+            equipos informáticos (ordenadores, impresoras, proyectores, etc.)
+            para comprobar su correcto funcionamiento y actualizaciones
+            oportunas si es necesario. 
+          </p>
+        </a>
 
-<!-- QUI SOM -->
-<div class="section" id="qui-som">
-  <div class="label">👋 Qui som i per què estem aquí</div>
-  <h2 class="title">Hola! Som el vostre equip de consultoria digital.</h2>
-  <p class="intro">El consell de direcció ens ha contractat per ajudar l'escola a fer el salt digital. No hem vingut a complicar la vida a ningú — tot el contrari. Volem que les tasques del dia a dia siguin més fàcils, ràpides i sense tanta paperassa.</p>
+        <!-- Área 2: Comunicación con Familias -->
+        <a href="./paginas/diagnostic.html" class="area_bloque fam fade-in">
+          <span class="icono"><i class="fas fa-users"></i></span>
+          <h3>Comunicación con Familias</h3>
+          <p>
+            Los comunicados a las familias se envían en papel a través de los
+            estudiantes <br />
+            Los estudiantes deben devolver un comprobante firmado por los padres
+            para asegurar que ha entregado la comunicación
+          </p>
+        </a>
 
-  <div class="intro-box fade-in">
-    "La transformació digital no és una opció, és una necessitat.<br>
-    <strong>I la bona notícia és que l'escola ja té les persones adequades per fer-ho possible.</strong>"
-  </div>
+        <!-- Área 3: Gestión Documental -->
+        <a href="./paginas/diagnostic.html" class="area_bloque doc fade-in">
+          <span class="icono"><i class="fas fa-folder"></i></span>
+          <h3>Gestión Documental</h3>
+          <p>
+            Los registros académicos y administrativos se mantienen en archivos
+            físicos.. <br />
+            Las solicitudes de certificados, expedientes y otros documentos se
+            realizan en papel y se gestionan manualmente
+          </p>
+        </a>
+      </div>
+    </section>
 
-  <div class="area-grid">
-    <a href="diagnostic.html" class="area-card it fade-in">
-      <span class="area-emoji">🖥️</span>
-      <h3>Gestió Informàtica</h3>
-      <p>Incidències, inventari d'equips i manteniment. Tot en un sol lloc, sense paper i sense perdre res pel camí.</p>
-    </a>
-    <a href="diagnostic.html" class="area-card fam fade-in">
-      <span class="area-emoji">👨‍👩‍👧</span>
-      <h3>Comunicació amb Famílies</h3>
-      <p>Adéu als comunicats en paper que mai arriben. Hola als missatges instantanis que tothom llegeix de veritat.</p>
-    </a>
-    <a href="diagnostic.html" class="area-card doc fade-in">
-      <span class="area-emoji">📂</span>
-      <h3>Gestió Documental</h3>
-      <p>Els expedients i certificats deixaran de viure en armaris plens de pols. Tot accessible, segur i organitzat.</p>
-    </a>
-    <a href="diagnostic.html" class="area-card rrhh fade-in">
-      <span class="area-emoji">👥</span>
-      <h3>Gestió de RRHH</h3>
-      <p>Les dades dels treballadors no poden dependre d'un sol ordinador. Cal fer-ho bé, amb seguretat i còpies de seguretat.</p>
-    </a>
-  </div>
-</div>
+    <!-- ================= BOTÓN SIGUIENTE PÁGINA ================= -->
+    <div class="next-page">
+      <a href="./paginas/diagnostic.html" class="next-btn"
+        >🔍 Ver el Diagnóstico <span>→</span></a
+      >
+    </div>
 
-<!-- NEXT PAGE -->
-<div class="next-page">
-  <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem;">Continua amb la Fase 1</p>
-  <a href="diagnostic.html" class="next-btn">🔍 Veure el Diagnòstic <span>→</span></a>
-</div>
+    <!-- --------- FOOTER ----------->
+    <footer>
+      <div class="footer_logo">
+        <i class="fas fa-school"></i> Nuestra escuela, en digital
+      </div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">La nostra escola, en digital 🏫</div>
-  <p>CFGS ASIX · 1665 Digitalització · Activitat 12<br>Jesuïtes Bellvitge – Joan XXIII · Curs 2024–2025</p>
-  <div class="footer-areas">
-    <span class="f-chip">🖥️ Gestió IT</span>
-    <span class="f-chip">👨‍👩‍👧 Famílies</span>
-    <span class="f-chip">📂 Documental</span>
-    <span class="f-chip">👥 RRHH</span>
-  </div>
-</footer>
+      <p>Alexandra, Diego y Oscar.</p>
 
-<script src="js/main.js"></script>
-</body>
+      <div class="footer_opciones">
+        <span class="footer_chip"
+          ><i class="fas fa-desktop"></i> Gestión IT</span
+        >
+        <span class="footer_chip"><i class="fas fa-users"></i> Familias</span>
+        <span class="footer_chip"
+          ><i class="fas fa-folder"></i> Documental</span
+        >
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
