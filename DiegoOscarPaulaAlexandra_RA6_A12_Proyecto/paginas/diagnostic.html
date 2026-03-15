@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oslex</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="icon" href="../img/logo.png" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <ul>
+    <li><a href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+    <li><a href="./diagnostic.html"><i class="fas fa-search"></i> Diagnóstico</a></li>
+    <li><a href="./solucions.html"><i class="fas fa-lightbulb"></i> Soluciones</a></li>
+    <li><a href="./motivacio.html"><i class="fas fa-heart"></i> Motivación & Plan</a></li>
+  </ul>
+</nav>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="page-kicker"><i class="fas fa-search"></i> Fase 1 · Diagnóstico</div>
+
+  <h1>Lo que nos hemos encontrado<br><em>(y no nos ha sorprendido)</em></h1>
+  <p>Hemos analizado cómo funcionan las cuatro áreas ahora mismo. ¿El resultado? Mucho papel, mucho trabajo manual y mucho tiempo perdido. Aquí lo explicamos con honestidad.</p>
+</div>
+<!-- DIAGNOSIS SECTION -->
+<div class="warm-bg">
+  <div class="section">
+    <div class="label"><i class="fas fa-clipboard-list"></i> Problemas detectados por área</div>
+    <h2 class="title">Tres áreas, muchos problemas en común</h2>
+    <p class="intro">Cada área analizada presenta similares problemas: dependencia del papel, procesos manuales y falta de trazabilidad. Elija una pestaña para ver el detalle.</p>
+    <div class="diag-tabs">
+      <button class="dtab it active" onclick="showDiag('d-it',this)"><i class="fas fa-desktop"></i> Gestión IT</button>
+      <button class="dtab fam" onclick="showDiag('d-fam',this)"><i class="fas fa-users"></i> Familias</button>
+      <button class="dtab doc" onclick="showDiag('d-doc',this)"><i class="fas fa-folder-open"></i> Documental</button>
+    </div>
+    <!-- IT -->
+    <div class="diag-panel active" id="d-it">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div class="p-body">
+            <h4>Seguimiento manual de los equipos</h4>
+            <p>El personal técnico debe pasar físicamente por cada equipo para comprobar su estado. Problemas pequeños se convierten en grandes averías porque nadie los detecta a tiempo.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="p-body">
+            <h4>Solicitudes de mantenimiento en papel</h4>
+            <p>Cuando un proyector falla, es necesario rellenar un papel y esperar. Nadie sabe dónde está la solicitud ni cuándo se resolverá. Mientras, la clase sufre.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-table"></i></div>
+          <div class="p-body">
+            <h4>Incidencias registradas en una hoja de cálculo</h4>
+            <p>Un Excel manual no es un sistema real. Sin alertas automáticas, sin prioridades y sin que nadie lo consulte de forma consistente.</p>
+            <span class="severity sev-med"><i class="fas fa-exclamation-circle"></i> Gravedad media</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-server"></i></div>
+          <div class="p-body">
+            <h4>Inventario informático desactualizado</h4>
+            <p>Nadie sabe exactamente cuántos equipos hay ni en qué estado se encuentran. Planificar compras es un acto de fe, no de gestión profesional.</p>
+            <span class="severity sev-med"><i class="fas fa-exclamation-circle"></i> Gravedad media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAMILIAS -->
+    <div class="diag-panel" id="d-fam">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-envelope"></i></div>
+          <div class="p-body">
+            <h4>Comunicados en papel a través de los alumnos</h4>
+            <p>El comunicado sale de secretaría, pasa por las manos del alumno y… a veces llega a casa, a veces no. Las familias no saben lo que pasa en el colegio hasta que es demasiado tarde.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-signature"></i></div>
+          <div class="p-body">
+            <h4>Justificante firmado por los padres</h4>
+            <p>Pedir una firma en papel y devolverla a través del alumno es lento y poco fiable. Mucho trabajo administrativo para comprobar quién ha respondido y quién no.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-volume-mute"></i></div>
+          <div class="p-body">
+            <h4>Comunicación de una sola dirección</h4>
+            <p>Las familias no tienen ningún canal digital sencillo para contactar con el colegio. Tienen que llamar por teléfono o venir en persona para cualquier consulta.</p>
+            <span class="severity sev-med"><i class="fas fa-exclamation-circle"></i> Gravedad media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DOCUMENTAL -->
+    <div class="diag-panel" id="d-doc">
+      <div class="problem-list">
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-archive"></i></div>
+          <div class="p-body">
+            <h4>Archivos físicos para todo</h4>
+            <p>Expedientes en papel, dentro de armarios. Si se pierde un documento o hay un incendio, no hay manera de recuperarlo. El riesgo es real e inmediato.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-hourglass-half"></i></div>
+          <div class="p-body">
+            <h4>Solicitudes de certificados gestionadas manualmente</h4>
+            <p>Pedir un certificado implica ir a secretaría, esperar y volver a buscarlo. Un proceso que puede durar días para una tarea que debería ser instantánea.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+        <div class="problem-item fade-in">
+          <div class="p-icon"><i class="fas fa-puzzle-piece"></i></div>
+          <div class="p-body">
+            <h4>Sin sistema documental centralizado</h4>
+            <p>Cada departamento guarda documentos de manera diferente. Sin versiones actualizadas, sin posibilidad de colaboración y con duplicados por todas partes.</p>
+            <span class="severity sev-high"><i class="fas fa-exclamation-triangle"></i> Gravedad alta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- NAVIGATION BUTTONS -->
+<div class="next-page">
+  <div class="nav-buttons">
+    <a href="../index.html" class="prev-btn"><span>←</span> Volver al Inicio</a>
+    <a href="./solucions.html" class="next-btn"><i class="fas fa-lightbulb"></i> Ver las Soluciones <span>→</span></a>
+  </div>
+</div>
+    <!-- --------- FOOTER ----------->
+    <footer>
+        <div class="footer_logo">
+            <i class="fas fa-school"></i> Nuestra escuela, en digital
+        </div>
+        <p>Alexandra, Diego y Oscar.</p>
+        <div class="footer_opciones">
+            <span class="footer_chip"><i class="fas fa-desktop"></i> Gestión IT</span>
+            <span class="footer_chip"><i class="fas fa-users"></i> Familias</span>
+            <span class="footer_chip"><i class="fas fa-folder"></i> Documental</span>
+
+        </div>
+    </footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
